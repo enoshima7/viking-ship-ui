@@ -3,12 +3,13 @@
   font-size: $font-size;
   border-radius: $border-radius;
 }
+
 @mixin button-style(
   $background,
   $border,
   $color,
   $hover-background: lighten($background, 7.5%),
-  $hover-border: lighten($border, 7.5%),
+  $hover-border: lighten($border, 10%),
   $hover-color: $color
 ) {
   color: $color;
@@ -31,4 +32,9 @@
     background: $background;
     border-color: $border;
   }
+}
+
+@mixin alert-style($color, $background-color) {
+  color: $color;
+  bachground-color: $background-color;
 }
